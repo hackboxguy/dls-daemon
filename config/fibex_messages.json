@@ -205,6 +205,36 @@
       "name": "THERMAL_CRITICAL_DETECT",
       "description": "Critical temp detected - FastShutdown"
     },
+    "25007": {
+      "category": "THERMAL",
+      "name": "THERMAL_TSOC_ERROR",
+      "description": "TSOC error notification"
+    },
+    "25026": {
+      "category": "THERMAL",
+      "name": "THERMAL_TEMP_REPORT",
+      "description": "Temperature report"
+    },
+    "25046": {
+      "category": "THERMAL",
+      "name": "THERMAL_ZONE_1",
+      "description": "Thermal zone 1 status"
+    },
+    "25047": {
+      "category": "THERMAL",
+      "name": "THERMAL_ZONE_2",
+      "description": "Thermal zone 2 status"
+    },
+    "25048": {
+      "category": "THERMAL",
+      "name": "THERMAL_ZONE_3",
+      "description": "Thermal zone 3 status"
+    },
+    "25049": {
+      "category": "THERMAL",
+      "name": "THERMAL_ZONE_4",
+      "description": "Thermal zone 4 status"
+    },
     "9006": {
       "category": "VOLTAGE",
       "name": "VOLT_ABNORMAL",
@@ -250,6 +280,41 @@
       "name": "SFI_HB_MISSING",
       "description": "SFI HeartBeat Missing"
     },
+    "25087": {
+      "category": "SFI",
+      "name": "SFI_THERMAL_IPC_ERR",
+      "description": "SFI Thermal IPC write failed"
+    },
+    "25088": {
+      "category": "SFI",
+      "name": "SFI_THERMAL_IPC_NA",
+      "description": "SFI Thermal IPC channel N/A"
+    },
+    "25096": {
+      "category": "SFI",
+      "name": "SFI_AMP_THERMAL_1",
+      "description": "IOC to SFI Amp Thermal 1"
+    },
+    "25097": {
+      "category": "SFI",
+      "name": "SFI_AMP_THERMAL_2",
+      "description": "IOC to SFI Amp Thermal 2"
+    },
+    "25098": {
+      "category": "SFI",
+      "name": "SFI_AMP_THERMAL_3",
+      "description": "IOC to SFI Amp Thermal 3"
+    },
+    "25099": {
+      "category": "SFI",
+      "name": "SFI_AMP_THERMAL_4",
+      "description": "IOC to SFI Amp Thermal 4"
+    },
+    "25108": {
+      "category": "SFI",
+      "name": "SFI_THERMAL_RX",
+      "description": "Thermal Manager SFI Rx MsgLen"
+    },
     "22237": {
       "category": "SAFETY",
       "name": "MCAL_CORETEST_FAIL",
@@ -274,6 +339,91 @@
       "category": "SAFETY",
       "name": "ROM_CRC_FAIL",
       "description": "RomCrcSelf FAILED"
+    },
+    "22575": {
+      "category": "SAFETY",
+      "name": "CLMA_TEST_FAIL",
+      "description": "CLMA Test FAILED"
+    },
+    "21020": {
+      "category": "SAFETY",
+      "name": "SAFETY_FAULT_INJECT",
+      "description": "SafetyMonitor fault injection value"
+    },
+    "21021": {
+      "category": "SAFETY",
+      "name": "SAFETY_AD_DIAG_ERR",
+      "description": "SafetyMonitor AD conversion Self Diag error"
+    },
+    "21022": {
+      "category": "SAFETY",
+      "name": "SAFETY_AWOVCL_ERR",
+      "description": "SafetyMonitor AWOVCL limit check error"
+    },
+    "21023": {
+      "category": "SAFETY",
+      "name": "SAFETY_ISOVCL_ERR",
+      "description": "SafetyMonitor ISOVCL limit check error"
+    },
+    "21024": {
+      "category": "SAFETY",
+      "name": "SAFETY_INPUT_FAULT",
+      "description": "SafetyMonitor InputFaultDataByte"
+    },
+    "21025": {
+      "category": "SAFETY",
+      "name": "SAFETY_DEBOUNCE_FAULT",
+      "description": "SafetyMonitor DebouncedFaultDataByte"
+    },
+    "21026": {
+      "category": "SAFETY",
+      "name": "SAFETY_STATE_FAULT",
+      "description": "SafetyMonitor SafetyStateFaultPresent"
+    },
+    "21027": {
+      "category": "SAFETY",
+      "name": "SAFETY_INT_INCONS",
+      "description": "Interruption flag Inconsistent"
+    },
+    "21028": {
+      "category": "SAFETY",
+      "name": "SAFETY_MCAL_MODULE",
+      "description": "MCAL Driver callout module"
+    },
+    "21029": {
+      "category": "SAFETY",
+      "name": "SAFETY_BUSOFF_MON",
+      "description": "BusOff Monitor Channel"
+    },
+    "21082": {
+      "category": "SAFETY",
+      "name": "SAFETY_MGR_SELFTEST",
+      "description": "SafetyManager selftstdata"
+    },
+    "21083": {
+      "category": "SAFETY",
+      "name": "SAFETY_MGR_HEAL_CNT",
+      "description": "SafetyManager Healing Counter"
+    },
+    "21084": {
+      "category": "SAFETY",
+      "name": "SAFETY_MGR_HEAL_CNT2",
+      "description": "SafetyManager Healing Counter 2"
+    },
+    "19511": {
+      "category": "SAFETY",
+      "name": "SAFETY_STATE_CHANGE",
+      "description": "Safety state changed"
+    },
+    "11532": {
+      "category": "SAFETY",
+      "name": "SAFETY_DEACTIVATED",
+      "description": "Safety DEACTIVATED"
+    },
+    "11549": {
+      "category": "SAFETY",
+      "name": "SAFETY_ACTIVATED",
+      "description": "Safety ACTIVATED"
     },
     "1191": {
       "category": "ERROR",
