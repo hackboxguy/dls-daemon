@@ -1,0 +1,365 @@
+{
+  "messages": {
+    "1201": {
+      "category": "VERSION",
+      "name": "APPA_SW_VERSION",
+      "description": "AppA SW version string"
+    },
+    "1203": {
+      "category": "VERSION",
+      "name": "APPB_SW_VERSION",
+      "description": "AppB SW version string"
+    },
+    "9330": {
+      "category": "VERSION",
+      "name": "VARIANT_CODE",
+      "description": "Variant code (e.g., Z075)"
+    },
+    "20490": {
+      "category": "VERSION",
+      "name": "VERSION_INFO_SW",
+      "description": "SW component version info"
+    },
+    "20493": {
+      "category": "VERSION",
+      "name": "EXTERNAL_IPC_SW_VERSION",
+      "description": "External IPC SW version"
+    },
+    "3427": {
+      "category": "VERSION",
+      "name": "HSM_SW_VERSION",
+      "description": "HSM SW version"
+    },
+    "41163": {
+      "category": "VERSION",
+      "name": "VERSION_REPORT",
+      "description": "Version report"
+    },
+    "24008": {
+      "category": "BOOT",
+      "name": "BOOT_IOC_SEND_BOOTINFO",
+      "description": "IOC boot info"
+    },
+    "29015": {
+      "category": "BOOT",
+      "name": "BOOTLOADER_INFO",
+      "description": "Bootloader identification"
+    },
+    "3001": {
+      "category": "BOOT",
+      "name": "SECURE_BOOT_SUCCESS",
+      "description": "Secure boot successful"
+    },
+    "3002": {
+      "category": "BOOT",
+      "name": "SECURE_BOOT_FAIL_BL",
+      "description": "Bootloader secure boot failed"
+    },
+    "3003": {
+      "category": "BOOT",
+      "name": "SECURE_BOOT_FAIL_APP",
+      "description": "Application secure boot failed"
+    },
+    "3004": {
+      "category": "BOOT",
+      "name": "HSM_NOT_ENABLED",
+      "description": "HSM is not enabled"
+    },
+    "20086": {
+      "category": "BOOT",
+      "name": "CLUSTER_BOOT_SLOT_A",
+      "description": "Cluster boot slot A selected"
+    },
+    "20087": {
+      "category": "BOOT",
+      "name": "CLUSTER_BOOT_SLOT_B",
+      "description": "Cluster boot slot B selected"
+    },
+    "20088": {
+      "category": "BOOT",
+      "name": "IVI_BOOT_SLOT_A",
+      "description": "IVI boot slot A"
+    },
+    "20089": {
+      "category": "BOOT",
+      "name": "IVI_BOOT_SLOT_B",
+      "description": "IVI boot slot B"
+    },
+    "21086": {
+      "category": "BOOT",
+      "name": "SAFE_INIT",
+      "description": "Safe state initialized"
+    },
+    "21087": {
+      "category": "BOOT",
+      "name": "SAFE_DEACTIVATE_EVENT",
+      "description": "Safe deactivate event"
+    },
+    "21088": {
+      "category": "BOOT",
+      "name": "SAFE_DEACTIVATED_STATE",
+      "description": "Safe mode deactivated"
+    },
+    "29016": {
+      "category": "BOOT",
+      "name": "BOOT_STATE_BOOTING",
+      "description": "System booting"
+    },
+    "29017": {
+      "category": "BOOT",
+      "name": "BOOT_STATE_EVENT",
+      "description": "Boot sequence event"
+    },
+    "9338": {
+      "category": "BOOT",
+      "name": "EV_VOLTAGE_IN_RANGE",
+      "description": "Voltage within range"
+    },
+    "9339": {
+      "category": "BOOT",
+      "name": "EV_VEHICLE_POWER_ON",
+      "description": "Vehicle power on"
+    },
+    "9384": {
+      "category": "BOOT",
+      "name": "EV_STARTUP_COMPLETE",
+      "description": "Startup complete"
+    },
+    "9008": {
+      "category": "POWER",
+      "name": "POWERMODE_TO_SOC",
+      "description": "Power mode sent to SOC"
+    },
+    "9031": {
+      "category": "POWER",
+      "name": "WAKEUP_FACTOR",
+      "description": "Wakeup factor"
+    },
+    "9040": {
+      "category": "POWER",
+      "name": "WAKEUP_REASON",
+      "description": "Wakeup reason"
+    },
+    "9140": {
+      "category": "POWER",
+      "name": "CRITICAL_TEMP_SHUTDOWN",
+      "description": "Critical temperature - fast shutdown"
+    },
+    "9143": {
+      "category": "POWER",
+      "name": "IGNITION_STATUS",
+      "description": "Ignition status"
+    },
+    "9144": {
+      "category": "POWER",
+      "name": "IGNITION_TIMEOUT",
+      "description": "Ignition status timeout"
+    },
+    "9241": {
+      "category": "POWER",
+      "name": "CLUSTER_PSC_POWERMODE",
+      "description": "ClusterPSC power mode to SFI"
+    },
+    "20030": {
+      "category": "S2R",
+      "name": "S2R_MAINTENANCE_TIMER",
+      "description": "S2R maintenance timer value"
+    },
+    "20031": {
+      "category": "S2R",
+      "name": "S2R_MAINTENANCE_REBOOT",
+      "description": "S2R maintenance reboot time"
+    },
+    "9135": {
+      "category": "S2R",
+      "name": "RTC_WAKEUP_1DAY",
+      "description": "RTC wakeup set after 1 day"
+    },
+    "9136": {
+      "category": "S2R",
+      "name": "RTC_WAKEUP_1HOUR",
+      "description": "RTC wakeup set after 1 hour"
+    },
+    "9137": {
+      "category": "S2R",
+      "name": "RTC_WAKEUP_1MIN",
+      "description": "RTC wakeup set after 1 minute"
+    },
+    "25004": {
+      "category": "THERMAL",
+      "name": "THERMAL_SOC_READ_FAIL",
+      "description": "SOC board temp read failed"
+    },
+    "25005": {
+      "category": "THERMAL",
+      "name": "THERMAL_FAULT_INJECT",
+      "description": "Critical temp fault injected"
+    },
+    "25006": {
+      "category": "THERMAL",
+      "name": "THERMAL_FAULT_OCCUR",
+      "description": "Critical temp fault occurred"
+    },
+    "25045": {
+      "category": "THERMAL",
+      "name": "THERMAL_CRITICAL_DETECT",
+      "description": "Critical temp detected - FastShutdown"
+    },
+    "9006": {
+      "category": "VOLTAGE",
+      "name": "VOLT_ABNORMAL",
+      "description": "Abnormal voltage - STANDBY"
+    },
+    "9007": {
+      "category": "VOLTAGE",
+      "name": "VOLT_RECOVERED",
+      "description": "Voltage recovered"
+    },
+    "9205": {
+      "category": "VOLTAGE",
+      "name": "VOLT_CRITICAL_RESET",
+      "description": "Reset due to battery voltage critical"
+    },
+    "9285": {
+      "category": "VOLTAGE",
+      "name": "VOLT_STATUS",
+      "description": "Voltage Status"
+    },
+    "9331": {
+      "category": "VOLTAGE",
+      "name": "BATT_VOLTAGE",
+      "description": "Battery voltage"
+    },
+    "21001": {
+      "category": "SFI",
+      "name": "SFI_SOC_HB_DISABLED",
+      "description": "SFI & SOC HeartBeat Disabled"
+    },
+    "21004": {
+      "category": "SFI",
+      "name": "SFI_HB_NEVER_RECV",
+      "description": "SFI HeartBeat never received"
+    },
+    "21005": {
+      "category": "SFI",
+      "name": "SFI_HB_OK",
+      "description": "SFI HeartBeat OK"
+    },
+    "21006": {
+      "category": "SFI",
+      "name": "SFI_HB_MISSING",
+      "description": "SFI HeartBeat Missing"
+    },
+    "22237": {
+      "category": "SAFETY",
+      "name": "MCAL_CORETEST_FAIL",
+      "description": "MCAL CoreTest FAILED"
+    },
+    "22284": {
+      "category": "SAFETY",
+      "name": "RAM_TEST_FAIL",
+      "description": "RamTest FAILED"
+    },
+    "22308": {
+      "category": "SAFETY",
+      "name": "ECC_TEST_FAIL",
+      "description": "ECC Test failure"
+    },
+    "22320": {
+      "category": "SAFETY",
+      "name": "WDT_SELF_FAIL",
+      "description": "WdtSelf FAILED"
+    },
+    "22551": {
+      "category": "SAFETY",
+      "name": "ROM_CRC_FAIL",
+      "description": "RomCrcSelf FAILED"
+    },
+    "1191": {
+      "category": "ERROR",
+      "name": "NVM_WRITE_ERROR",
+      "description": "NVM write error"
+    },
+    "1568": {
+      "category": "ERROR",
+      "name": "BOOT_SLOT_NVM_BUSY",
+      "description": "Boot slot request failed - NVM busy"
+    },
+    "1694": {
+      "category": "ERROR",
+      "name": "I2C_WRITE_ERROR",
+      "description": "I2C write error"
+    },
+    "1780": {
+      "category": "ERROR",
+      "name": "I2C_READ_ERROR",
+      "description": "I2C read error"
+    },
+    "9166": {
+      "category": "STATS",
+      "name": "BOOT_STATISTICS",
+      "description": "Boot statistics block"
+    },
+    "17122": {
+      "category": "IGN",
+      "name": "IC_HW_IGN_ON",
+      "description": "IC HW Ignition ON"
+    },
+    "17128": {
+      "category": "IGN",
+      "name": "IC_HW_IGN_OFF",
+      "description": "IC HW Ignition OFF"
+    },
+    "17257": {
+      "category": "IGN",
+      "name": "HW_IGN_ON",
+      "description": "HW Ignition ON"
+    }
+  },
+  "categories": {
+    "VERSION": {
+      "color": "green",
+      "priority": "high"
+    },
+    "BOOT": {
+      "color": "cyan",
+      "priority": "high"
+    },
+    "POWER": {
+      "color": "yellow",
+      "priority": "medium"
+    },
+    "S2R": {
+      "color": "yellow",
+      "priority": "medium"
+    },
+    "THERMAL": {
+      "color": "red",
+      "priority": "high"
+    },
+    "VOLTAGE": {
+      "color": "yellow",
+      "priority": "medium"
+    },
+    "SFI": {
+      "color": "magenta",
+      "priority": "medium"
+    },
+    "SAFETY": {
+      "color": "red",
+      "priority": "high"
+    },
+    "ERROR": {
+      "color": "red",
+      "priority": "high"
+    },
+    "STATS": {
+      "color": "blue",
+      "priority": "low"
+    },
+    "IGN": {
+      "color": "cyan",
+      "priority": "medium"
+    }
+  }
+}
