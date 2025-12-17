@@ -66,6 +66,8 @@ add_subdirectory(client)
 install(TARGETS dls-daemon DESTINATION bin)
 install(DIRECTORY config/ DESTINATION etc/dls-daemon
         FILES_MATCHING PATTERN "*.json")
+install(PROGRAMS scripts/test_client.py DESTINATION bin
+        RENAME dls-test-client)
 
 # CPack for packaging
 set(CPACK_PACKAGE_NAME "dls-daemon")
