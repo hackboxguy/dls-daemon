@@ -74,6 +74,19 @@ set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "High-performance DLS/DLT packet capture d
 set(CPACK_PACKAGE_VENDOR "DLS Tools")
 include(CPack)
 
+# =============================================================================
+# Manifest for VMBOX Integration
+# =============================================================================
+# Generate manifest.json from template
+if(EXISTS "${CMAKE_SOURCE_DIR}/manifest.template.json")
+    configure_file(manifest.template.json
+                   ${CMAKE_CURRENT_BINARY_DIR}/manifest.json
+                   @ONLY)
+    install(FILES ${CMAKE_CURRENT_BINARY_DIR}/manifest.json
+            DESTINATION .)
+endif()
+
+
 # Print configuration summary
 message(STATUS "")
 message(STATUS "DLS-DAEMON Configuration:")

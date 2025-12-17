@@ -1,0 +1,51 @@
+{
+  "name": "@PROJECT_NAME@",
+  "version": "@PROJECT_VERSION@",
+  "description": "DLS/DLT Packet Capture Daemon",
+  "type": "service",
+  "port": 3491,
+
+  "health": {
+    "type": "tcp",
+    "port": 3491,
+    "interval": 10,
+    "timeout": 5
+  },
+
+  "startup": {
+    "command": "/app/@PROJECT_NAME@/bin/dls-daemon",
+    "args": [
+      "-p", "/dev/ttyUSB2",
+      "-d",
+      "-P", "/run/app/@PROJECT_NAME@.pid",
+      "-c", "/app/@PROJECT_NAME@/etc/dls-daemon/fibex_messages.json",
+      "-s", "/tmp/dls-data.sock",
+      "-C", "3491"
+    ],
+    "working_dir": "/app/@PROJECT_NAME@",
+    "priority": 25,
+    "depends_on": []
+  },
+
+  "shutdown": {
+    "timeout": 10,
+    "signal": "SIGTERM"
+  },
+
+  "data_dirs": [
+    "logs"
+  ],
+
+  "env": {
+    "APP_DATA_DIR": "/data/app-data/@PROJECT_NAME@",
+    "APP_LOG_FILE": "/var/log/app/@PROJECT_NAME@.log"
+  },
+
+  "logging": {
+    "file": "/var/log/app/@PROJECT_NAME@.log",
+    "syslog_tag": "app.@PROJECT_NAME@",
+    "max_size_mb": 10,
+    "rotate_count": 3
+  }
+}
+
