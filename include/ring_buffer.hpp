@@ -18,6 +18,7 @@
 #include <cstring>
 #include <memory>
 #include <algorithm>
+#include <sys/types.h>  // for ssize_t
 
 namespace dls {
 
