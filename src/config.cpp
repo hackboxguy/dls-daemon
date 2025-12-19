@@ -404,9 +404,9 @@ void Config::print_usage(const char* program_name) {
         "  -V, --version           Show version\n"
         "\n"
         "Examples:\n"
-        "  " << program_name << " -p /dev/ttyUSB2\n"
-        "  " << program_name << " -p /dev/ttyUSB2 -c fibex.json -l capture.bin\n"
-        "  " << program_name << " -p /dev/ttyUSB2 -T 3490 -d\n"
+        "  " << program_name << " -p /dev/dls-trace\n"
+        "  " << program_name << " -p /dev/dls-trace -c fibex.json -l capture.bin\n"
+        "  " << program_name << " -p /dev/dls-trace -T 3490 -d\n"
         "  " << program_name << " --replay capture.bin --replay-speed 0\n"
         "\n";
 }

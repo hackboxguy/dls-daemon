@@ -273,7 +273,7 @@ inline uint64_t read_be64(const uint8_t* data) {
 // Default Configuration Values
 // ============================================================================
 
-constexpr const char* DEFAULT_SERIAL_PORT = "/dev/ttyUSB2";
+constexpr const char* DEFAULT_SERIAL_PORT = "/dev/dls-trace";  // Persistent symlink from udev rules
 constexpr int DEFAULT_BAUD_RATE = 115200;
 constexpr const char* DEFAULT_DATA_SOCKET = "/tmp/dls-data.sock";
 constexpr int DEFAULT_CONTROL_PORT = 3491;
