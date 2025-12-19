@@ -16,6 +16,7 @@
     "command": "/app/@PROJECT_NAME@/bin/dls-daemon",
     "args": [
       "-p", "/dev/dls-trace",
+      "-W", "30",
       "-d",
       "-P", "/run/app/@PROJECT_NAME@.pid",
       "-c", "/app/@PROJECT_NAME@/etc/dls-daemon/fibex_messages.json",

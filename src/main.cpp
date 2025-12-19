@@ -191,6 +191,31 @@ int main(int argc, char* argv[]) {
         }
         std::cout << "Replay mode: " << config.replay_file << "\n";
     } else {
+        // Wait for device if requested (helps with boot timing)
+        if (config.wait_for_device > 0) {
+            int waited = 0;
+            while (waited < config.wait_for_device) {
+                if (access(config.serial_port.c_str(), F_OK) == 0) {
+                    if (!config.daemonize) {
+                        std::cout << "Device " << config.serial_port << " found after "
+                                  << waited << "s\n";
+                    }
+                    break;
+                }
+                if (!config.daemonize && waited == 0) {
+                    std::cout << "Waiting for " << config.serial_port << " (max "
+                              << config.wait_for_device << "s)...\n";
+                }
+                std::this_thread::sleep_for(std::chrono::seconds(1));
+                waited++;
+            }
+            if (access(config.serial_port.c_str(), F_OK) != 0) {
+                std::cerr << "Error: Device " << config.serial_port
+                          << " not found after " << config.wait_for_device << "s\n";
+                return 1;
+            }
+        }
+
         if (!reader.open(config.serial_port, config.baud_rate)) {
             std::cerr << "Error: Failed to open serial port\n";
             return 1;

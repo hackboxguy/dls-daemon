@@ -149,6 +149,9 @@ public:
     // Gap tracking
     int gap_threshold = 1;          // Minimum gap size to report (0 = disable tracking)
 
+    // Device wait (for boot timing issues)
+    int wait_for_device = 0;        // Seconds to wait for device to appear (0 = no wait)
+
     // Flags
     bool show_help = false;
     bool show_version = false;

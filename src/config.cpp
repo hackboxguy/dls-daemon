@@ -264,6 +264,9 @@ bool Config::parse_args(int argc, char* argv[]) {
         // Gap tracking
         {"gap-threshold",  required_argument, nullptr, 'G'},
 
+        // Device wait
+        {"wait-for-device", required_argument, nullptr, 'W'},
+
         // Help
         {"help",           no_argument,       nullptr, 'h'},
         {"version",        no_argument,       nullptr, 'V'},
@@ -274,7 +277,7 @@ bool Config::parse_args(int argc, char* argv[]) {
     int opt;
     int option_index = 0;
 
-    while ((opt = getopt_long(argc, argv, "p:b:s:T:C:c:B:l:a:vdP:r:S:G:hV",
+    while ((opt = getopt_long(argc, argv, "p:b:s:T:C:c:B:l:a:vdP:r:S:G:W:hV",
                               long_options, &option_index)) != -1) {
         switch (opt) {
             case 'p':
@@ -346,6 +349,13 @@ bool Config::parse_args(int argc, char* argv[]) {
                     return false;
                 }
                 break;
+            case 'W':
+                wait_for_device = std::atoi(optarg);
+                if (wait_for_device < 0 || wait_for_device > 300) {
+                    std::cerr << "Error: Invalid wait timeout (0-300): " << optarg << "\n";
+                    return false;
+                }
+                break;
             case 'h':
                 show_help = true;
                 return true;
@@ -398,6 +408,9 @@ void Config::print_usage(const char* program_name) {
         "\n"
         "Gap Tracking:\n"
         "  -G, --gap-threshold N   Min mcnt gap to report (default: 1, 0 = disable)\n"
+        "\n"
+        "Device Wait:\n"
+        "  -W, --wait-for-device N Wait up to N seconds for device to appear (default: 0)\n"
         "\n"
         "Misc:\n"
         "  -h, --help              Show this help\n"
